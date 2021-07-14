@@ -16,4 +16,5 @@ urlpatterns = [
     path('crearmascota/', views.crear, name='crear'),
     path('eliminar/<id>', views.eliminar, name='eliminar'),
     path('modificar/<id>', views.modificar, name='modificar'),
+    path('categoria/', views.categoria, name='categoria'),
     ]   

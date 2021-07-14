@@ -7,7 +7,7 @@ from django.db.models import CharField, IntegerField
 
 class Animal (models.Model):
     idAnimal = models.IntegerField(primary_key=True, verbose_name='Id de Animal')
-    nombreAnimal = models.CharField(max_length=50, verbose_name='Nombre de Animal')
+    nombreAnimal = models.CharField(max_length=50, verbose_name='Categoría')
 
     def __str__(self):
         return self.nombreAnimal
@@ -16,7 +16,7 @@ class Mascota (models.Model):
     idMascota = models.IntegerField(primary_key=True, verbose_name='Id de Mascota')
     nombre = models.CharField(max_length=30, verbose_name='Nombre de Mascota')
     telefonoDuenio = models.CharField(max_length=15, verbose_name='Telefono del Dueño')
-    idAnimal = models.ForeignKey(Animal, on_delete=models.CASCADE)
+    idAnimal = models.ForeignKey(Animal, on_delete=models.CASCADE, verbose_name='Categoría')
 
     def __str__(self):
         return self.nombre

@@ -74,7 +74,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid modificar">
         <h1>Modificar Mascota</h1>
         <form action="" method="POST">
             {% csrf_token %}
@@ -82,8 +82,8 @@
                 {{ form.as_table }}
             </div>
             <input type="submit" class="btn btn-info" value="Modificar">
-            <input type="reset" class="btn btn-secondary" value="Limpiar">
-            <a href="{% url 'mascotas' %}">Volver</a>
+            
+            <a href="{% url 'mascotas' %}">Volver <i class="fas fa-undo-alt"></i></a>
         </form>
         <div class="alert alert-success" role="alert">
             {{mensaje}}

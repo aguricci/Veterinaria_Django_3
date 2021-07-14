@@ -314,4 +314,37 @@ footer{
     border-style: solid;
     text-align: center;
     margin: 3%;
+    width: 90%;
 }
+
+#mascotas a{
+    color: black;
+}
+
+.registro, .crear, .modificar {
+    text-align: center;
+    
+}
+
+.registro h1, .crear h1, .modificar h1{
+    color: #393e46;
+    padding-top: 1%;
+}
+
+.crear input, .modificar input{
+    margin: 1%;
+}
+
+#formulario a, .modificar a{
+    color: black;
+}
+
+.btnmascotas{
+    padding-left: 25%;
+}
+
+.btncategoria{
+    padding-right: 25%;
+}
+
+
